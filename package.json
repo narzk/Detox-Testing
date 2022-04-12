@@ -1,0 +1,34 @@
+{
+  "name": "AwesomeProject",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint .",
+    "detox:build:android-debug": "detox build --configuration android.emu.debug",
+    "detox:e2e:android-debug": "DETOX_CONFIGURATION=android.emu.debug npx cucumber-js"
+  },
+  "dependencies": {
+    "react": "17.0.2",
+    "react-native": "0.68.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/register": "^7.17.7",
+    "@babel/runtime": "^7.17.9",
+    "@cucumber/cucumber": "^8.0.0",
+    "@react-native-community/eslint-config": "^3.0.1",
+    "babel-jest": "^27.5.1",
+    "detox": "^19.6.5",
+    "eslint": "^8.13.0",
+    "jest": "^27.5.1",
+    "metro-react-native-babel-preset": "^0.70.1",
+    "react-test-renderer": "17.0.2"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
